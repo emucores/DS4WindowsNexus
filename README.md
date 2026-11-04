@@ -8,7 +8,7 @@ DS4Windows Nexus is an open-source gamepad input mapper and virtual controller e
 
 ## V1.0 Beta
 
-This is the first Nexus release, for **Windows x64**. Release publication is being prepared. Once published, the Windows package will be available from this repository’s [Releases](https://github.com/emucores/DS4WindowsNexus/releases).
+This is the first Nexus release, for **Windows x64**. [Download the Windows x64 ZIP](https://github.com/emucores/DS4WindowsNexus/releases/download/v1.0.0-beta.1/DS4Windows-Nexus-V1.0-Beta.zip) or read the [release notes](https://github.com/emucores/DS4WindowsNexus/releases/tag/v1.0.0-beta.1).
 
 The complete package includes the app, its .NET runtime, matching source and notices. Extract the full archive; do not move only the executable. Screenshot version labels may show earlier development builds.
 
@@ -41,7 +41,7 @@ Screenshots show the Nexus interface. Settings shown are examples, not recommend
 
 ## Get started
 
-1. Download the Windows x64 archive from Releases when available and extract all files.
+1. Download the Windows x64 archive from Releases and extract all files.
 2. Open Nexus and follow controller selection and system checks.
 3. Configure VIIPER / USB-IP when virtual output is required. Use HidHide when needed to prevent double input.
 4. Connect your controller using a data-capable USB cable or Windows Bluetooth pairing.
