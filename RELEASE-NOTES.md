@@ -1,63 +1,61 @@
-# DS4Windows Nexus V1.0 Beta
+# DS4Windows Nexus v1
 
-V1.0 BETA · FIRST RELEASE
+**Your controller. Your way.**
 
-DS4Windows Nexus V1.0 Beta
+The first stable Nexus release for Windows 10 (build 19041+) and Windows 11, x64.
+Version **1.0.1** includes the audio-source recovery fix validated during final testing.
 
-Nexus brings a new controller-focused workspace and guided tools to the hbashton DS4Windows foundation.
+## Downloads
 
-What Nexus adds
+- **DS4Windows-Nexus-x64.zip** — small main download. Requires Microsoft .NET 10 Desktop Runtime for Windows x64 already installed. Extract and run `DS4Windows.exe`.
+- **DS4Windows-Nexus-x64-First-Run.zip** — the same app plus Microsoft's verified .NET 10.0.14 Desktop Runtime installer. Extract and run `First Run.cmd` once; Windows may request administrator approval.
+- **DS4Windows-Nexus-Source.zip** — complete matching app source and build files. Use this asset for the GPL source; GitHub's automatic source archives may contain only the repository landing files.
+- **SHA256SUMS.txt** — checksums for the three downloads.
 
-A controller overview, searchable settings and dedicated profile editor.
+Both app ZIPs extract into **DS4Windows Nexus x64** and contain one user README plus required license notices. Future updates can use the small main download.
 
-Guided first-run checks, connection help and separate input and feedback tests.
+## Features
 
-Profile comparison, conflict-safe imports, history and reviewed assignment.
+### Controller workspace and profiles
+- A redesigned Overview with battery, connection, input report rate, selected controller, active profile and useful controls.
+- Clear descriptions on every tab, searchable settings and layouts that adapt to narrower windows.
+- Button/stick mapping, dead zones, response curves, touchpad gestures, motion/gyro controls and special actions on supported devices.
+- Per-game Auto Profiles, presets, Game Setup Wizard, profile comparison, history and backups.
 
-Action Studio for base/modifier mappings and tap/hold/double-tap actions.
+### Feedback and audio
+- DualSense and DualSense Edge Trigger Lab: linked or independent L2/R2 effects, feedback/weapon/vibration designs and optional full-pull actions.
+- Audio Haptics from system audio or selected app sessions, with gain, left/right strength, balance and response controls.
+- USB and Bluetooth audio haptics for DualSense and DualSense Edge.
+- Controller speaker/headset streaming from a selected Windows output or app, configured separately from grip haptics.
+- Lightbar colors, player indicators, rumble and temporary feedback previews.
 
-Guided resting-stick measurements, radial deadzone suggestions and runtime gyro bias reset.
+### Setup, updates and support
+- Latest stable Alia5 VIIPER lookup with download verification; USBIP installed when needed.
+- Saved setup progress and automatic continuation after a required Windows restart.
+- Verified HidHide and FakerInput installer downloads.
+- GitHub stable-update checking and size/SHA-256 verified app downloads.
+- Connection checks, searchable logs and optional support diagnostics.
 
-Searchable presets, game setup guidance and redacted controller health reports.
+## Fixes included
 
-Reworked Audio Haptics and Trigger Lab interfaces, plus improved Advanced settings layout.
+- Removed setup UI blocking and corrected VIIPER server startup/reconnect checks.
+- Added reliable restart continuation and direct optional-driver installation.
+- Corrected USB audio sample handling and Bluetooth haptics media delivery.
+- Kept local lightbar changes on Bluetooth media frames, including DualSense Edge.
+- Replaced the unavailable virtual speaker source with real Windows/app audio capture.
+- Prevented an empty app-only source after automatic game following is turned off, and added Use System Audio recovery.
+- Reduced testing clutter and separated speaker playback, grip haptics, trigger effects and their diagnostics.
 
-Original illustrated documentation for the Nexus interface.
+## Requirements and compatibility
 
-Built on hbashton/DS4Windows
+Windows x64, a supported controller, and Microsoft .NET 10 Desktop Runtime. Virtual output requires VIIPER/USBIP; setup guides installation. HidHide and FakerInput are optional.
 
-Controller remapping, gyro, Auto Profiles, supported Nintendo devices, virtual outputs and advanced native feedback build on the upstream fork and wider DS4Windows community. These inherited capabilities remain part of Nexus; they are not presented as new Nexus inventions.
+Virtual controller output: **Xbox 360, DualShock 4, DualSense and DualSense Edge**. Xbox One/Series and Switch 2 virtual output are not included in this release. Native virtual audio/microphone endpoints and advanced native game-trigger passthrough are not included; local Audio Haptics and Trigger Lab control the physical device separately. Edge adaptive effects require the rear trigger stops in full-travel position.
 
-One workspace for your controller
+## Validation and release status
 
-Read connection and battery status, select your active profile, remap buttons and tune stick curves, deadzones, touchpad behavior, motion aiming and lightbar settings. DS5Windows describes using a PS5 controller with the same DS4Windows Nexus package.
+213 automated checks passed and the Windows app/helper built successfully. The user confirmed driver setup/restart continuation, optional installers, rumble, adaptive triggers, audio, and the Edge Bluetooth lightbar during hardware testing. Hardware coverage does not imply every controller/game combination has been tested.
 
-Feedback and virtual controllers
+**This release is unsigned.** Windows may display an unknown-publisher or SmartScreen warning. Code signing will be added when a publisher certificate or signing service is available.
 
-Audio Haptics turns system or app audio into controller feedback. Trigger Lab provides linked or independent L2/R2 effects on supported DualSense hardware. Profiles can present Xbox 360, Xbox One / Series, DualShock 4, DualSense, DualSense Edge or Switch 2 Pro virtual output through the corresponding VIIPER / USB-IP setup. Output support does not add physical capabilities to your controller.
-
-Setup, profiles and daily use
-
-The guided setup walks through controller selection, system checks and connection testing. Auto Profiles switches settings for games and apps. Diagnostics, logs, profile backups and recovery tools help investigate problems without deleting your configuration.
-
-A refreshed website and documentation
-
-The launch website includes illustrated setup instructions, task-based documentation, controller compatibility guidance, troubleshooting, alternative tools and a structured support form. Navigation, screenshots and layouts have been refined for desktop and mobile, with compressed images and editable WordPress SEO fields.
-
-Before you update
-
-Back up your profiles, extract the complete archive and retain its bundled files. Review
-
-Getting Started
-
-and test input and feedback separately. Previous screenshot build numbers identify development captures; the public release is V1.0 Beta.
-
-Beta limitations
-
-Windows x64 only. This beta is unsigned and uses manual downloads. Automatic online updates and signed-package installation are not enabled. Physical feedback and fresh-PC driver/restart acceptance still need Windows hardware testing. Features depend on the controller, connection, virtual output and game.
-
-The Windows x64 app was built with its bundled runtime and matching source. 170 automated tests passed; Windows UI, driver installation and controller hardware acceptance still require hands-on verification.
-
-Download V1.0 Beta →
-
-Read the guides →
+[Downloads and guides](https://ds4-windows.com/download/) · [Website](https://ds4-windows.com) · [Report an issue](https://github.com/emucores/DS4WindowsNexus/issues)
