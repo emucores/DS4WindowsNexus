@@ -1,10 +1,6 @@
 <p align="center">
   <a href="https://ds4-windows.com/">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="docs/images/nexus-logo-dark.webp">
-      <source media="(prefers-color-scheme: light)" srcset="docs/images/nexus-logo-light.webp">
-      <img src="docs/images/nexus-logo-light.webp" alt="DS4Windows Nexus logo" width="470">
-    </picture>
+    <img src="https://ds4-windows.com/wp-content/uploads/2026/11/ds4windows-new-logo.webp" alt="DS4Windows Nexus logo" width="470">
   </a>
 </p>
 
